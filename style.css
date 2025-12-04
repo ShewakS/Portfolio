@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+        
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    color: white;
+    padding: 15px;
+}
+
+ol{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+ 
+h2{
+    color: antiquewhite;
+    padding: 7px;
+}
+
+li{
+    color: antiquewhite;
+    padding: 7px;
+}
+
+img{
+    padding: 20px;
+    width: 250px;
+    height: 300px;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 700px;
+}
