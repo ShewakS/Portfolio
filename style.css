@@ -30,15 +30,23 @@ li{
     padding: 7px;
 }
 
-img{
-    padding: 20px;
-    width: 250px;
-    height: 300px;
+.home-section { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+  padding: 80px 20px;
 }
 
-.intro{
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    max-width: 700px;
+.intro h3 { font-size: 3rem; margin: 0; }
+.intro h5 { font-size: 1.5rem; margin: 10px 0; color: #555; }
+.intro p { font-size: 1rem; color: #777; max-width: 600px; margin: 10px auto; }
+
+.cta-buttons .btn { 
+  margin: 10px; 
+  padding: 10px 20px; 
+  background: #4CAF50; 
+  color: white; 
+  text-decoration: none; 
+  border-radius: 5px;
 }
