@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
@@ -82,7 +82,7 @@ h3 {
 
 /* Home Section */
 .home-section {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: darkcyan;
     color: white;
     padding: 100px 20px;
 }
