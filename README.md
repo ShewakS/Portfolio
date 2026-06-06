@@ -1,35 +1,16 @@
-# Portfolio
+# React + Vite
 
-Welcome to my portfolio! This project showcases my skills, education, and experience in web development and machine learning.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## About Me
+Currently, two official plugins are available:
 
-I'm Shewak - a passionate developer currently exploring **Web Development** and **Machine Learning**. I am actively working with **Java** and **Python**, and I enjoy building real-world machine learning projects that solve practical problems.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Goals
+## React Compiler
 
-- Strengthen my problem-solving skills
-- Advance my machine learning expertise
-- Learn advanced algorithms
-- Grow into a proficient Machine Learning Engineer
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Portfolio Contents
+## Expanding the ESLint configuration
 
-- **About** - Introduction and overview
-- **Education** - Academic background and qualifications
-- **Skills** - Technical skills and competencies
-- **Contact** - Ways to get in touch
-
-## Technologies
-
-- **Languages**: Java, Python
-- **Focus Areas**: Web Development, Machine Learning
-- **Current Learning**: Advanced ML Algorithms
-
-## Getting Started
-
-Open `navigation.html` in your browser to view the portfolio.
-
----
-
-Feel free to explore and reach out if you'd like to collaborate or discuss opportunities!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
