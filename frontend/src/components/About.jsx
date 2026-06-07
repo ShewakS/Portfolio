@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import LightbulbRoundedIcon from '@mui/icons-material/LightbulbRounded';
+import RocketLaunchRoundedIcon from '@mui/icons-material/RocketLaunchRounded';
 
 function FadeUp({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -19,12 +20,12 @@ function FadeUp({ children, delay = 0 }) {
 
 const cards = [
   {
-    emoji: '💡',
+    icon: LightbulbRoundedIcon,
     title: 'Problem Solver',
     text: 'I enjoy breaking down complex problems into clean, efficient solutions using Java, Python, and modern web stacks.',
   },
   {
-    emoji: '🚀',
+    icon: RocketLaunchRoundedIcon,
     title: 'Fast Learner',
     text: 'From React frontends to ML pipelines, I pick up new technologies quickly and apply them to real-world projects.',
   },
@@ -40,7 +41,6 @@ export default function About() {
         </FadeUp>
 
         <div className="about-grid">
-          {/* Main bio card */}
           <FadeUp delay={0.1}>
             <div className="about-card about-card-wide">
               <p>
@@ -60,16 +60,21 @@ export default function About() {
             </div>
           </FadeUp>
 
-          {/* Side cards */}
-          {cards.map((c, i) => (
-            <FadeUp key={c.title} delay={0.15 + i * 0.08}>
-              <div className="about-card">
-                <div className="about-emoji">{c.emoji}</div>
-                <h3>{c.title}</h3>
-                <p>{c.text}</p>
-              </div>
-            </FadeUp>
-          ))}
+          {cards.map((c, i) => {
+            const Icon = c.icon;
+
+            return (
+              <FadeUp key={c.title} delay={0.15 + i * 0.08}>
+                <div className="about-card">
+                  <div className="about-emoji">
+                    <Icon fontSize="inherit" />
+                  </div>
+                  <h3>{c.title}</h3>
+                  <p>{c.text}</p>
+                </div>
+              </FadeUp>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -1,5 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import KeyboardRoundedIcon from '@mui/icons-material/KeyboardRounded';
+import HubRoundedIcon from '@mui/icons-material/HubRounded';
+import StorageRoundedIcon from '@mui/icons-material/StorageRounded';
+import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
+import AccountTreeRoundedIcon from '@mui/icons-material/AccountTreeRounded';
 
 function FadeUp({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -18,27 +23,27 @@ function FadeUp({ children, delay = 0 }) {
 
 const skills = [
   {
-    icon: '⌨️',
+    icon: KeyboardRoundedIcon,
     title: 'Languages',
-    pills: ['C','C++','Java', 'SQL', 'HTML','CSS'],
+    pills: ['C', 'C++', 'Java', 'SQL', 'HTML', 'CSS'],
   },
   {
-    icon: '🧠',
+    icon: HubRoundedIcon,
     title: 'Frameworks & Libraries',
     pills: ['React', 'Express.js', 'Node.js'],
   },
   {
-    icon: '🗄️',
+    icon: StorageRoundedIcon,
     title: 'Databases',
     pills: ['PostgreSQL', 'MongoDB', 'MySQL'],
   },
   {
-    icon: '🛠️',
+    icon: ConstructionRoundedIcon,
     title: 'Tools & Platforms',
-    pills: ['Git', 'GitHub', 'VS Code', 'Figma', ''],
+    pills: ['Git', 'GitHub', 'VS Code', 'Figma'],
   },
   {
-    icon: '📐',
+    icon: AccountTreeRoundedIcon,
     title: 'CS Fundamentals',
     pills: ['Data Structures', 'Algorithms', 'OOP', 'DBMS'],
   },
@@ -54,19 +59,25 @@ export default function Skills() {
         </FadeUp>
 
         <div className="skills-grid">
-          {skills.map((card, i) => (
-            <FadeUp key={card.title} delay={i * 0.07}>
-              <div className="skill-card">
-                <div className="skill-card-icon">{card.icon}</div>
-                <h3>{card.title}</h3>
-                <div className="skill-pills">
-                  {card.pills.map(p => (
-                    <span key={p} className="skill-pill">{p}</span>
-                  ))}
+          {skills.map((card, i) => {
+            const Icon = card.icon;
+
+            return (
+              <FadeUp key={card.title} delay={i * 0.07}>
+                <div className="skill-card">
+                  <div className="skill-card-icon">
+                    <Icon fontSize="inherit" />
+                  </div>
+                  <h3>{card.title}</h3>
+                  <div className="skill-pills">
+                    {card.pills.map(p => (
+                      <span key={p} className="skill-pill">{p}</span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </FadeUp>
-          ))}
+              </FadeUp>
+            );
+          })}
         </div>
       </div>
     </section>

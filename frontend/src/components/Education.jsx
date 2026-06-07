@@ -1,5 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
+import WorkspacePremiumRoundedIcon from '@mui/icons-material/WorkspacePremiumRounded';
+import EditNoteRoundedIcon from '@mui/icons-material/EditNoteRounded';
+import MenuBookRoundedIcon from '@mui/icons-material/MenuBookRounded';
+import TrackChangesRoundedIcon from '@mui/icons-material/TrackChangesRounded';
 
 function FadeUp({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -18,33 +23,33 @@ function FadeUp({ children, delay = 0 }) {
 
 const education = [
   {
-    degree: 'B.E / B.Tech — Computer Science & Engineering',
+    degree: 'B.E / B.Tech - Computer Science & Engineering',
     college: 'Sri Eshwar College of Engineering',
-    year: '2024 – 2028',
+    year: '2024 - 2028',
     highlights: [
-      '🏆 Winner — Freshathon Hackathon',
-      '🥇 Two-time Code Lee Winner',
-      '📝 Presented at Amrita University Conference',
+      { icon: EmojiEventsRoundedIcon, text: 'Winner - Freshathon Hackathon' },
+      { icon: WorkspacePremiumRoundedIcon, text: 'Two-time Code Lee Winner' },
+      { icon: EditNoteRoundedIcon, text: 'Presented at Amrita University Conference' },
     ],
   },
   {
     degree: 'HSC',
     college: 'Srinivasa Vidhyalaya Matriculation Higher Secondary School (Class XII)',
-    year: '2022 – 2024',
+    year: '2022 - 2024',
     highlights: [
-      '📘 Science Stream — Computer Science',
-      '🎯 Strong foundation in Mathematics & Logic',
+      { icon: MenuBookRoundedIcon, text: 'Science Stream - Computer Science' },
+      { icon: TrackChangesRoundedIcon, text: 'Strong foundation in Mathematics & Logic' },
     ],
   },
   {
     degree: 'SSLC',
     college: 'Srinivasa Vidhyalaya Matriculation Higher Secondary School (Class X)',
-    year: '2021 – 2022',
+    year: '2021 - 2022',
     highlights: [
-      '📚 Strong academic performance in core subjects',
-      '🎯 Strong academic foundation in Mathematics and Science',
+      { icon: MenuBookRoundedIcon, text: 'Strong academic performance in core subjects' },
+      { icon: TrackChangesRoundedIcon, text: 'Strong academic foundation in Mathematics and Science' },
     ],
-  }
+  },
 ];
 
 export default function Education() {
@@ -58,7 +63,7 @@ export default function Education() {
 
         <div className="edu-timeline">
           {education.map((edu, i) => (
-            <FadeUp key={i} delay={i * 0.1}>
+            <FadeUp key={edu.degree} delay={i * 0.1}>
               <div className="edu-card">
                 <div className="edu-row">
                   <div>
@@ -68,9 +73,16 @@ export default function Education() {
                   <span className="edu-year">{edu.year}</span>
                 </div>
                 <div className="edu-highlights">
-                  {edu.highlights.map((h, j) => (
-                    <div key={j} className="edu-highlight">{h}</div>
-                  ))}
+                  {edu.highlights.map((h, j) => {
+                    const Icon = h.icon;
+
+                    return (
+                      <div key={j} className="edu-highlight">
+                        <Icon fontSize="small" />
+                        <span>{h.text}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </FadeUp>

@@ -1,5 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 
 function FadeUp({ children, delay = 0 }) {
   const ref = useRef(null);
@@ -17,7 +19,6 @@ function FadeUp({ children, delay = 0 }) {
 }
 
 const projects = [
-
   {
     index: '01',
     title: 'Student Leave Management System',
@@ -48,8 +49,8 @@ const projects = [
     desc: 'HireMind AI is an end-to-end AI-powered recruitment platform that automates resume screening, candidate evaluation, interview management, and hiring decisions through an intelligent multi-stage assessment process.',
     stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Claude API'],
     github: 'https://github.com/ShewakS/HireMind',
-    demo: ' https://hire-mind-ai.vercel.app/',
-  }
+    demo: 'https://hire-mind-ai.vercel.app/',
+  },
 ];
 
 export default function Projects() {
@@ -70,12 +71,12 @@ export default function Projects() {
                   <div className="project-links-row">
                     {p.github && (
                       <a href={p.github} className="project-icon-btn" target="_blank" rel="noreferrer" title="GitHub">
-                        GH
+                        <GitHubIcon fontSize="small" />
                       </a>
                     )}
                     {p.demo && (
                       <a href={p.demo} className="project-icon-btn" target="_blank" rel="noreferrer" title="Live Demo">
-                        ↗
+                        <OpenInNewRoundedIcon fontSize="small" />
                       </a>
                     )}
                   </div>
