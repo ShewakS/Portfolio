@@ -22,7 +22,7 @@ const links = [
   { id: 'contact', label: '/Contact', icon: MailRoundedIcon },
 ];
 
-const resumePath = '/Shewaks%20resume.pdf';
+const resumePath = 'https://drive.google.com/drive/folders/1rPY43OajVHK_p7H4cxiVykauNV3bPbdI?usp=drive_link';
 
 function ResumeLink({ className = 'sidebar-resume', style }) {
   return (
@@ -75,7 +75,7 @@ export default function Navbar() {
       <aside className="sidebar">
         <div className="sidebar-inner">
           <div className="sidebar-brand">
-            <span className="sidebar-logo">S<span>.</span></span>
+            <span className="sidebar-logo"><span>$ ss.dev</span></span>
             <span className="sidebar-sub">CS Student - Developer</span>
           </div>
 

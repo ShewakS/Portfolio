@@ -23,7 +23,7 @@ const projects = [
     index: '01',
     title: 'Student Leave Management System',
     desc: 'A web portal for students to apply for leaves, track approval status, and for faculty to manage and approve leave requests efficiently.',
-    stack: ['React', 'Node.js', 'MongoDB', 'Express.js'],
+    stack: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
     github: 'https://github.com/Shankar-v27/MERN.git',
     demo: 'https://mern-brown-psi.vercel.app/',
   },
@@ -31,17 +31,17 @@ const projects = [
     index: '02',
     title: 'E-commerce Clothing Website',
     desc: 'A full-featured online clothing store with product listings, cart management, user authentication, and order tracking built on the MERN stack.',
-    stack: ['React', 'Node.js', 'MongoDB', 'Express.js'],
+    stack: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
     github: 'https://github.com/ShewakS/Thread-Co-Backend',
     demo: 'https://shewak-threadco.netlify.app/',
   },
   {
     index: '03',
     title: 'AI-Powered Question Generator & Evaluator',
-    desc: 'Automatically generates medical MCQs by topic and difficulty, and evaluates responses with instant feedback to support effective exam preparation.',
+    desc: 'MedQGen is a AI-powered web application that enables users to generate medical multiple-choice questions, conduct online exams, evaluate answers instantly, generate PDF reports, and securely manage user data using MongoDB Atlas.',
     stack: ['Python', 'Flask', 'NLP', 'Machine Learning'],
     github: 'https://github.com/ShewakS/MedQGen',
-    demo: null,
+    demo: 'https://medqgen.onrender.com',
   },
   {
     index: '04',
@@ -51,6 +51,14 @@ const projects = [
     github: 'https://github.com/ShewakS/HireMind',
     demo: 'https://hire-mind-ai.vercel.app/',
   },
+  {
+    index: '05',
+    title: 'Eximly',
+    desc: 'Eximly is a role-based logistics management platform with public marketing pages, user authentication, shipment creation, domestic/international workflows, file uploads, document verification, shipment tracking, admin management, order monitoring, analytics, and contact support.',
+    stack: ['Next.js', 'TypeScript', 'MongoDB', 'JWT authentication', 'Bycrypt'],
+    github: 'https://github.com/ShewakS/Eximly',
+    demo: 'https://shewak-eximly.vercel.app/',
+  }
 ];
 
 export default function Projects() {

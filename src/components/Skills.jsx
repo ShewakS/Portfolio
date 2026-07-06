@@ -30,7 +30,7 @@ const skills = [
   {
     icon: HubRoundedIcon,
     title: 'Frameworks & Libraries',
-    pills: ['React', 'Express.js', 'Node.js'],
+    pills: ['React', 'Express.js', 'Node.js', 'Bootstrap', 'Material UI', 'Next.js'],
   },
   {
     icon: StorageRoundedIcon,
@@ -40,12 +40,12 @@ const skills = [
   {
     icon: ConstructionRoundedIcon,
     title: 'Tools & Platforms',
-    pills: ['Git', 'GitHub', 'VS Code', 'Figma'],
+    pills: ['Git', 'GitHub', 'VS Code', 'Figma','Canva','Postman','Vercel','Render'],
   },
   {
     icon: AccountTreeRoundedIcon,
     title: 'CS Fundamentals',
-    pills: ['Data Structures', 'Algorithms', 'OOP', 'DBMS'],
+    pills: ['Data Structures', 'Algorithms', 'Object-Oriented Programming', 'DBMS'],
   },
 ];
 
