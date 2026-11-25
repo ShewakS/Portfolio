@@ -20,15 +20,39 @@ function FadeUp({ children, delay = 0 }) {
 
 const projects = [
   {
-    index: '01',
+  index: '01',
+  title: 'EcoBuild AI – Sustainable Construction Planning Platform',
+  desc: 'An AI-powered construction platform featuring ML-based material quantity prediction, cost estimation, carbon emission assessment, waste management, sustainable material recommendations, and construction progress monitoring.',
+  stack: ['React.js', 'Python', 'Flask', 'MongoDB', 'Scikit-learn'],
+  github: 'https://github.com/ShewakS/EcoBuild-AI',
+  // demo: 'YOUR_LIVE_DEMO_LINK',
+  },
+  {
+  index: '02',
+  title: 'Glucosafe - AI',
+  desc: 'An AI-powered healthcare platform featuring glucose monitoring, insulin and carbohydrate tracking, Indian food recognition and carb estimation, hypoglycemia risk prediction, personalized health insights, risk alerts, and health data visualization.',
+  stack: ['React.js', 'Python', 'Flask', 'MongoDB', 'Scikit-learn', 'Pandas', 'NumPy', 'SHAP'],
+  github: 'https://github.com/ShewakS/Glucosafe',
+  // demo: 'YOUR_LIVE_DEMO_LINK',
+  },
+  {
+    index: '03',
     title: 'Student Leave Management System',
     desc: 'A web portal for students to apply for leaves, track approval status, and for faculty to manage and approve leave requests efficiently.',
     stack: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
     github: 'https://github.com/Shankar-v27/MERN.git',
-    demo: 'https://mern-brown-psi.vercel.app/',
+    demo: 'https://shewak-lms.vercel.app/',
   },
   {
-    index: '02',
+    index: '04',
+    title: 'AI-Powered Question Generator & Evaluator',
+    desc: 'MedQGen is a AI-powered web application that enables users to generate medical multiple-choice questions, conduct online exams, evaluate answers instantly, generate PDF reports, and securely manage user data using MongoDB Atlas.',
+    stack: ['Python', 'Flask', 'NLP', 'Machine Learning'],
+    github: 'https://github.com/ShewakS/MedQGen',
+    demo: 'https://medqgen.onrender.com',
+  },
+   {
+    index: '05',
     title: 'E-commerce Clothing Website',
     desc: 'A full-featured online clothing store with product listings, cart management, user authentication, and order tracking built on the MERN stack.',
     stack: ['React.js', 'Node.js', 'MongoDB', 'Express.js'],
@@ -36,28 +60,12 @@ const projects = [
     demo: 'https://shewak-threadco.netlify.app/',
   },
   {
-    index: '03',
-    title: 'AI-Powered Question Generator & Evaluator',
-    desc: 'MedQGen is a AI-powered web application that enables users to generate medical multiple-choice questions, conduct online exams, evaluate answers instantly, generate PDF reports, and securely manage user data using MongoDB Atlas.',
-    stack: ['Python', 'Flask', 'NLP', 'Machine Learning'],
-    github: 'https://github.com/ShewakS/MedQGen',
-    demo: 'https://medqgen.onrender.com',
-  },
-  {
-    index: '04',
+    index: '06',
     title: 'HireMind AI',
     desc: 'HireMind AI is an end-to-end AI-powered recruitment platform that automates resume screening, candidate evaluation, interview management, and hiring decisions through an intelligent multi-stage assessment process.',
     stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Claude API'],
     github: 'https://github.com/ShewakS/HireMind',
     demo: 'https://hire-mind-ai.vercel.app/',
-  },
-  {
-    index: '05',
-    title: 'Eximly',
-    desc: 'Eximly is a role-based logistics management platform with public marketing pages, user authentication, shipment creation, domestic/international workflows, file uploads, document verification, shipment tracking, admin management, order monitoring, analytics, and contact support.',
-    stack: ['Next.js', 'TypeScript', 'MongoDB', 'JWT authentication', 'Bycrypt'],
-    github: 'https://github.com/ShewakS/Eximly',
-    demo: 'https://shewak-eximly.vercel.app/',
   }
 ];
 
